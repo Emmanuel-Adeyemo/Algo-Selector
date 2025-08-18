@@ -9,7 +9,6 @@ library(purrr)
 library(janitor)
 
 # --- Global Data and GA Parameters ---
-# pop_dta_raw = read.csv("pop_dta.csv", stringsAsFactors = FALSE)
 pop_dta_raw = readRDS('wheat_dta.RDS') %>% clean_names() %>% rename(ht = height)
 coa = readRDS('modified_COA.RDS')
 
@@ -170,7 +169,7 @@ server = function(input, output, session) {
       
       if (length(parents) == 1) {
         # parent with itself = 1
-        return(0.8 - coa_matrix[parents, parents]) # should be 1
+        return(0.8 - coa_matrix[parents, parents]) # should be 1. But in this example, div is high already
       } else {
         
         return(0.8 - coa_matrix[parents[1], parents[2]]) # should be 1
