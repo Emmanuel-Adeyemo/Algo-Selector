@@ -1,3 +1,6 @@
+
+#' @author - Emmanuel Adeyemo
+
 library(shiny)
 library(dplyr)
 library(GA)
