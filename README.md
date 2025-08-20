@@ -6,7 +6,7 @@ Data Normalization: Numeric trait columns are automatically normalized for consi
 
 Fitness Function: The heart of the GA - this is what the algorithm seeks to maximize. It calculates a final score for each potential solution (a set of selected crosses).
 
-$final_score = Mean(Primary Trait) - Secondary Trait Penalties - Diversity Penalty - Parent Overuse Penalty + Diversity Bonus$
+$finalscore = Mean(Primary Trait) - Secondary Trait Penalties - Diversity Penalty - Parent Overuse Penalty + Diversity Bonus$
 
 Secondary Trait Penalties: Based on user definition. Values outside thresholds incur scaled penalties. Pruned values are automatically discarded.
 
