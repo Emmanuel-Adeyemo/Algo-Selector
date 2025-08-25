@@ -15,3 +15,23 @@ Diversity Penalty: Calculated from the coa matrix for the selected parents. A di
 Parent Overuse Penalty: Based on the standard deviation of how many times each parent is used in the selected group, discouraging reliance on a few parents. 
 
 Diversity Bonus: A fixed bonus is awarded if the overall diversity score of the selected population meets or exceeds the diversity target.
+
+## Running the app from your R console
+To run the app locally, please install the following R packages:
+
+```r
+install.packages(shiny)
+install.packages(bslib)
+install.packages(GA)
+install.packages(dplyr)
+install.packages(purrr) 
+install.packages(janitor)
+install.packages(ggplot2)
+install.packages(GGally)
+install.packages(patchwork)
+```
+
+Then run directly in your R console using:
+```r
+shiny::runGitHub("Algo-Selector", username = "emmanuel-adeyemo", launch.browser = TRUE)
+```
