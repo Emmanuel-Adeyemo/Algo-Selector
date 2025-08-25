@@ -17,7 +17,7 @@ Parent Overuse Penalty: Based on the standard deviation of how many times each p
 Diversity Bonus: A fixed bonus is awarded if the overall diversity score of the selected population meets or exceeds the diversity target.
 
 ## Running the app from your R console
-To run the app locally, please install the following R packages:
+To run the app locally, install the following R packages:
 
 ```r
 install.packages(shiny)
